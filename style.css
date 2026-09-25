@@ -1,0 +1,26 @@
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+:root{
+  --bg:#f6f8ff;
+  --card:#fff;
+  --text:#172033;
+  --muted:#697386;
+  --primary:#5b5cf0;
+  --secondary:#7b61ff;
+  --line:#e7e9f4;
+  --shadow:0 14px 40px rgba(55,62,120,.12);
+}
+
+body{
+  font-family:Inter,Segoe UI,Arial,sans-serif;
+  background:
+    radial-gradient(circle at 85% 10%,#e9e4ff 0,transparent 25%),
+    radial-gradient(circle at 10% 80%,#dff5ff 0,transparent 22%),
+    var(--bg);
+  color:var(--text);
+  min-height:100vh;
+}

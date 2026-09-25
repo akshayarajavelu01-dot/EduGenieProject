@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduGenie — Gemini Powered Learning Assistant</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="nav">
+  <div class="logo">
+    <div class="logo-icon">✦</div>
+    Edu<span>Genie</span>
+  </div>
+
+  <div class="nav-right">
+    <div class="badge">✦ Powered by Google Gemini</div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="pill">🤖 AI Learning Assistant</div>
+
+  <h1>Learn smarter with <span class="gradient">EduGenie</span></h1>
+
+  <p>
+    Your personal AI study companion. Ask questions, simplify difficult
+    topics, generate examples and learn at your own pace.
+  </p>
+</section>
+
+<main class="app">
+
+  <aside class="sidebar">
+    <div class="side-title">Learning Tools</div>
+
+    <div class="menu active" onclick="setTopic('Explain a Topic')">
+      📚 <span>Explain a Topic</span>
+    </div>
+
+    <div class="menu" onclick="setTopic('Ask a Question')">
+      💡 <span>Ask a Question</span>
+    </div>
+
+    <div class="menu" onclick="setTopic('Give an Example')">
+      🧩 <span>Give an Example</span>
+    </div>
+
+    <div class="menu" onclick="setTopic('Summarize')">
+      📝 <span>Summarize</span>
+    </div>
+
+    <div class="menu" onclick="setTopic('Quiz Me')">
+      🎯 <span>Quiz Me</span>
+    </div>
+
+    <div class="tip">
+      💜 <b>Study Tip</b><br>
+      Ask EduGenie to explain any topic in simple words.
+      You can also ask for examples or a short exam answer.
+    </div>
+  </aside>
+
+  <section class="chat">
+
+    <div class="chat-head">
+      <div class="bot">
+        <div class="bot-avatar">✦</div>
+
+        <div>
+          <b>EduGenie AI</b>
+          <small>Your personal learning assistant</small>
+        </div>
+      </div>
+
+      <div class="status">● Online</div>
+    </div>
+
+    <div class="messages" id="messages">
+
+      <div class="message">
+        <div class="avatar">✦</div>
+
+        <div>
+          <div class="bubble">
+            Hi! 👋 I'm <b>EduGenie</b>.
+            Tell me what you're learning, and I'll explain it
+            in a simple and student-friendly way.
+          </div>
+
+          <div class="suggestions">
+
+            <button class="suggestion"
+              onclick="ask('Explain Python in simple words')">
+              Explain Python
+            </button>
+
+            <button class="suggestion"
+              onclick="ask('Explain Machine Learning')">
+              Machine Learning
+            </button>
+
+            <button class="suggestion"
+              onclick="ask('Give me a study tip')">
+              Study Tip
+            </button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="composer">
+
+      <div class="input-wrap">
+
+        <input
+          id="question"
+          placeholder="Ask EduGenie anything about your studies..."
+          onkeydown="if(event.key==='Enter')send()">
+
+        <button class="send" onclick="send()">➤</button>
+
+      </div>
+
+      <div class="quick">
+
+        <button onclick="fill('Explain this in simple words')">
+          Simple explanation
+        </button>
+
+        <button onclick="fill('Give me an example')">
+          Example
+        </button>
+
+        <button onclick="fill('Give me a 5 mark answer')">
+          5-mark answer
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<section class="features">
+
+  <div class="feature">
+    <div class="feature-icon">🧠</div>
+    <h3>Smart Explanations</h3>
+    <p>
+      Understand difficult concepts with simple,
+      step-by-step explanations.
+    </p>
+  </div>
+
+  <div class="feature">
+    <div class="feature-icon">⚡</div>
+    <h3>Instant Learning</h3>
+    <p>
+      Get quick answers and examples whenever you
+      need help with a topic.
+    </p>
+  </div>
+
+  <div class="feature">
+    <div class="feature-icon">🎯</div>
+    <h3>Exam Friendly</h3>
+    <p>
+      Ask for short notes, important points,
+      examples and exam-ready answers.
+    </p>
+  </div>
+
+</section>
+
+<footer>
+  EduGenie © 2026 • Gemini Powered Learning Assistant
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
